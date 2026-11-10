@@ -39,8 +39,8 @@ export default function Nav({ over }) {
     <header className={over ? 'nav nav--over' : 'nav'}>
       <div className="nav-inner">
         <Brand />
-        <button className="nav-toggle" aria-label="Menu" aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}>&#9776;</button>
+        <button className="nav-toggle" aria-label={open ? 'Close menu' : 'Menu'} aria-expanded={open}
+          onClick={() => setOpen((v) => !v)}>{open ? '\u00d7' : '\u2630'}</button>
         <nav className={open ? 'nav-links open' : 'nav-links'}>
           {links.map((l) => (
             <NavLink key={l.to} to={l.to} end={l.to === '/'}
