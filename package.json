@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "npx wrangler pages deploy dist --project-name=familiarsworkshop"
+    "deploy": "npx wrangler deploy"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.105.0",
